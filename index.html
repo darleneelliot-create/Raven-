@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Raven Speaks</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #e0dede;
+      font-family: "Garamond", serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #000000);
+    }
+    .message {
+      font-size: 1.8rem;
+      line-height: 1.6;
+      max-width: 700px;
+      border: 2px solid #444;
+      padding: 40px;
+      border-radius: 15px;
+      background: rgba(20, 20, 20, 0.9);
+      box-shadow: 0px 0px 25px #222;
+      text-shadow: 0px 0px 12px #6a0dad;
+    }
+    .raven {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <div class="raven">🪶</div>
+    <div id="ravenMessage"></div>
+  </div>
+
+  <script>
+    const messages = [
+      "The raven whispers: your light cannot be dimmed.",
+      "Even shadows bow before your rising spirit.",
+      "Today is woven with victory in your favor.",
+      "Your voice is magic — speak it into the world.",
+      "The universe bends when you believe.",
+      "Your courage cracks the cages others fear.",
+      "The storm is not against you, it is for you.",
+      "Every closed door is protection, not rejection.",
+      "Your ancestors cheer with every step you take.",
+      "The raven sees triumph where you only see trial.",
+      "Your presence shifts the energy of any room.",
+      "What you desire is already searching for you.",
+      "The fire inside you was never meant to go out.",
+      "Even in silence, your spirit sings.",
+      "The path ahead glows with unseen allies.",
+      "Strength flows in your bloodline; rise and claim it.",
+      "The raven reminds you: you are the prophecy.",
+      "Every doubt you shed becomes a feather of power.",
+      "You are not waiting for miracles — you are one.",
+      "Your dreams are seeds, already taking root.",
+      "The universe trusts you with big missions.",
+      "Even the night sky envies your brilliance.",
+      "Your resilience is the spell that cannot break.",
+      "Abundance circles closer with each brave step.",
+      "The raven says: destiny bends when you rise."
+    ];
+
+    function getRandomMessage() {
+      return messages[Math.floor(Math.random() * messages.length)];
+    }
+
+    document.getElementById("ravenMessage").innerText = getRandomMessage();
+  </script>
+</body>
+</html>
